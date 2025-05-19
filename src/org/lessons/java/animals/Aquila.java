@@ -1,15 +1,17 @@
 package org.lessons.java.animals;
 
-public class Aquila extends Animale {
+public class Aquila extends Animale implements Testing{
     private String mangia;
     private String verso;
+    
 
     
 
-    public Aquila(String dormi, String mangia, String verso) {
+    public Aquila(String dormi, String mangia, String verso){
         super(dormi, mangia, verso);
         this.mangia = "Roditori, lepri, volpi, uccelli, rettili e carogne";
         this.verso = "Strido";
+        
     }
 
     public String getMangia() {
@@ -28,10 +30,18 @@ public class Aquila extends Animale {
         this.verso = verso;
     }
 
+    
+  
     @Override
     public String toString(){
         return "Aquila: " + super.toString();
     }
+
+    @Override
+    public void faiVolare(){
+        System.out.println("Sto volando!!!");
+    }
+
     
     
 }

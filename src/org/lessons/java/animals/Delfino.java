@@ -1,12 +1,12 @@
 package org.lessons.java.animals;
 
-public class Delfino extends Animale {
+public class Delfino extends Animale implements Testing {
 
     private String mangia;
     private String verso;
 
 
-    public Delfino(String dormi, String mangia, String verso) {
+    public Delfino(String dormi, String mangia, String verso, String nuota) {
         super(dormi, mangia, verso);
         this.mangia = "Pesci, crostacei e cefalopodi";
         this.verso = "Clicks e fischi";
@@ -33,6 +33,10 @@ public class Delfino extends Animale {
         return "\nDelfino: " + super.toString();
     }
     
+     @Override
+    public void faiNuotare(){
+        System.out.println("Sto nuotando!!!");
+    }
     
 
 }

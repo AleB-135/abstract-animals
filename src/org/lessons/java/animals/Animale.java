@@ -41,6 +41,14 @@ public abstract class Animale {
         return "\nDorme: " + this.dormi + " "  + "\nMangia: " + this.getMangia() + "\nVerso: " + this.getVerso();
     }
 
+    public void faiVolare() {
+        System.out.println("Sto volando!!!");
+    }
+
+    public void faiNuotare(){
+        System.out.println("Sto nuotando!!!");
+    }
+
     
 }
 
